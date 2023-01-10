@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ic libertário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
 
 <header>
 
     <h1>Ic Libertário</h1>
 
-    <menu>
+    <i id= "burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+    <menu id="itens" onclick="clickUl()">
+
+       
 
         <ul>
             <a href="#">
@@ -54,4 +59,46 @@
 
     
 </body>
+
+<script>
+
+    function mudouTamanho() {
+
+    if(window.innerWidth >= 768) {
+
+        itens.style.display = 'block';
+    }
+
+
+
+else {itens.style.display = 'none'}
+
+    }
+
+    function clickMenu() {
+
+        if(itens.style.display == 'none') {
+
+            itens.style.display = 'block';
+        }
+
+        else {itens.style.display = 'none'}
+    }
+
+    function clickUl() {
+
+if(itens.style.display == 'none') {
+
+    itens.style.display = 'block'; burguer.style.display = 'none';
+}
+
+else {itens.style.display = 'none'; burguer.style.display = 'block';}
+}
+
+    
+
+  
+    
+
+</script>
 </html>
