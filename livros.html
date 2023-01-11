@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Libertários</title>
+    <link rel="stylesheet" href="paglivros/estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+        <h1>Livros disponíveis para download</h1>
+
+        <i id= "burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        
+            <menu id="itens" onclick="clickUl()">
+                <ul id="ul">
+                    <a href="#">
+                        <li><i id= "home" class="material-icons" onclick="clickMenu()">home</i></li>
+                  </a> <br>
+                    <a href="#">
+                        <li><i id= "book" class="material-icons" onclick="clickMenu()">book</i></li>
+                    </a>
+                    <br>
+                    <a href="#">
+                        <li><i id= "article"  class="material-icons" onclick="clickMenu()">article</i></li>
+                    </a>
+            
+                    <br>
+                    <a href="#">
+                        <li><i id= "send" class="material-icons" onclick="clickMenu()">send</i></li>
+                    </a>
+                </ul>
+       
+
+
+    </header>
+
+
+
+
+
+
+    
+</body>
+
+<script>
+
+    function mudouTamanho() {
+
+    if(window.innerWidth >= 768) {
+
+        itens.style.display = 'block'; 
+    }
+
+
+
+else {itens.style.display = 'none'}
+
+    }
+
+    function clickMenu() {
+
+        if(itens.style.display == 'none') {
+
+            itens.style.display = 'block'; burguer.innerHTML = "expand_less";
+        }
+
+        else {itens.style.display = 'none'; burguer.innerHTML = "menu";}
+    }
+
+    function clickUl() {
+
+if(itens.style.display == 'none') {
+
+    itens.style.display = 'block'; burguer.style.display = 'none';
+    
+}
+
+else {itens.style.display = 'none'; burguer.style.display = 'block';}
+}
+
+</script>
+
+</html>
