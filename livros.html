@@ -14,34 +14,33 @@
 
         <h1>Livros disponíveis para download</h1>
 
-        <input id="hamburguer" type="checkbox" style="display: none;">
-
-        <label for="hamburguer"> 
-            
-              <div class="hamburguer"></div>
-            </label>
-
-     
-
-        <i id= "burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <input  id="hamburguer" type="checkbox" style="display: block;" >
 
         
-            <menu id="itens" onclick="clickUl()">
+
+        <label for="hamburguer"> 
+
+            <div class="hamburguer"></div>
+                </label>
+
+
+        
+            <menu id="itens">
                 <ul id="ul">
                     <a href="#">
-                        <li><i id= "home" class="material-icons" onclick="clickMenu()">home</i></li>
+                        <li><i id= "home" class="material-icons" >home</i></li>
                   </a> <br>
                     <a href="#">
-                        <li><i id= "book" class="material-icons" onclick="clickMenu()">book</i></li>
+                        <li><i id= "book" class="material-icons" >book</i></li>
                     </a>
                     <br>
                     <a href="#">
-                        <li><i id= "article"  class="material-icons" onclick="clickMenu()">article</i></li>
+                        <li><i id= "article"  class="material-icons" >article</i></li>
                     </a>
             
                     <br>
                     <a href="#">
-                        <li><i id= "send" class="material-icons" onclick="clickMenu()">send</i></li>
+                        <li><i id= "send" class="material-icons" >send</i></li>
                     </a>
                 </ul>
        
@@ -59,38 +58,17 @@
 
 <script>
 
-    function mudouTamanho() {
-
-    if(window.innerWidth >= 768) {
-
-        itens.style.display = 'block'; 
-    }
-
-
-
-else {itens.style.display = 'none'}
-
-    }
-
-    function clickMenu() {
-
-        if(itens.style.display == 'none') {
-
-            itens.style.display = 'block'; burguer.innerHTML = "expand_less";
-        }
-
-        else {itens.style.display = 'none'; burguer.innerHTML = "menu";}
-    }
+ 
 
     function clickUl() {
 
 if(itens.style.display == 'none') {
 
-    itens.style.display = 'block'; burguer.style.display = 'none';
+    itens.style.display = 'block'; 
     
 }
 
-else {itens.style.display = 'none'; burguer.style.display = 'block';}
+else {itens.style.display = 'none'; }
 }
 
 </script>
