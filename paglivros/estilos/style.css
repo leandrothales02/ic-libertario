@@ -131,5 +131,74 @@ i#burguer:hover {
 
 }
 
+.hamburguer {
+
+    width: 300px;
+    height: 300px;
+
+    background-color: #333;
+    border: 10%;
+    position: relative;
+
+}
+
+.hamburguer:after {
+
+    content: '';
+
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 5%;
+    height: 2%;
+
+    background-color:var(--cor1);
+
+    border-radius: 20px;
+
+    transition: 1s ease;
+}
+
+.hamburguer:before {
+
+    content: '';
+
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    width: 1.5%;
+    height: 1%;
+
+    background-color:var(--cor1);
+
+    border-radius: 20px;
+
+    transition: 1s ease;
+}
+
+#hamburguer:checked ~ label .hamburguer:after {
+
+transform: rotate(225deg);
+
+top: 30%;
+left: 15%;
+
+width: 5%;
+height: 2%;
+
+}
+
+#hamburguer:checked ~ label .hamburguer:before {
+
+    transform: rotate(-225deg);
+    
+    width: 5%;
+    height: 2%;
+    top: 30%;
+    left: 15%;
+    
+    }
+
+
 
 
