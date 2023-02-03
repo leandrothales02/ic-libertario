@@ -92,7 +92,8 @@ menu i:hover{
 
 
     transform: translate(-3px, -3px);
-    transition: 0.3s;
+    transition: 0.3s ease;
+    color: white;
    
     
 }
@@ -106,8 +107,8 @@ menu {
 
 .hamburguer {
 
-    width: 0.1px;
-    height: 0.1px;
+    width: 1px;
+    height: 1px;
     left: 0px ;
     top: -10px;
 
@@ -123,10 +124,10 @@ menu {
     content: '';
 
     position: absolute;
-    top: 20px;
-    right: -200px;
+    top: -15px;
+    right: -1460px;
     width: 25px; 
-    height: 1px;
+    height: 2px;
 
     background-color:var(--cor1);
 
@@ -140,10 +141,10 @@ menu {
     content: '';
 
     position: absolute;
-    top: 30px;
-    right: -200px;
+    top: -7px;
+    right: -1460px;
     width: 20px;
-    height: 0.8px;
+    height: 2px;
 
     background-color:var(--cor1);
 
@@ -156,22 +157,32 @@ menu {
 
 transform: rotate(225deg);
 
-top: 30px;
-right: -200px;
+top: -7px;
+right: -1460px;
 width: 20px;
-height: 0.8px;
+height: 2px;
 
 }
 
 #hamburguer:checked ~ label .hamburguer:before {
 
     transform: rotate(-225deg);
-    top: 30px;
-    right: -200px;
+    top: -7px;
+    right: -1460px;
     width: 20px;
-    height: 0.8px;
+    height: 2px;
    
     
+    }
+
+    #hamburguer {
+
+        transform: translate(1442px,-21px);
+        display: none;
+        width: 10px;
+        height: 10px;
+        
+        
     }
 
 

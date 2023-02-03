@@ -14,7 +14,7 @@
 
         <h1>Livros disponíveis para download</h1>
 
-        <input  id="hamburguer" type="checkbox" style="display: block;" >
+        <input onclick="clickUl()" id="hamburguer" type="checkbox"  >
 
         
 
@@ -63,13 +63,13 @@
 
     function clickUl() {
 
-if(itens.style.display == 'none') {
+if(itens.style.display == 'block') {
 
-    itens.style.display = 'block'; 
+    itens.style.display = 'none'; 
     
 }
 
-else {itens.style.display = 'none'; }
+else {itens.style.display = 'block'; }
 }
 
 </script>
