@@ -18,95 +18,64 @@
 html, body {
 
     width: 100vw;
+    height: 100vh;
     background-color: rgb(27, 24, 24);
 }
 
-header > h1 {
-
-    padding-top: 6px;
-    font-size: 1em;
-    font-family: var(--fonte1);
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    height: 30px;
-}
 
 header {
 
-    background-color: rgb(17, 17, 17);
-    height: 30px;
-    position: relative;
-}
-
-header ul {
-
-    position: absolute;
-    height:260px;
+    width: 100%;
     background-color: var(--cor1);
-    width:40px;
-    top: 34px;
-    right: 0px;
-    border: solid 1px rgba(0, 0, 0, 0.423);
-    text-align: center;
-    border-bottom-left-radius: 4px;
-    
-    
-
+    position: fixed;
+    top: 0px;
+    z-index: 999;
 }
 
-header li {
+.navbar {
 
-    
-    display: block;
-    margin-top: 10px;
-    
-}
-
-header a {
-
-    
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    font-size: 0.9em;
-    height: 50px;
-    width: 50px;
-    
-    
-   
-    
-}
-
-menu i {
-
-    padding: 10px;
-    transform: translateY(-10px);
-    
-    
-}
-
-
-menu i:hover{
-
-
-    transform: translate(-3px, -3px);
-    transition: 0.3s ease;
-    color: white;
-   
-    
-}
-
-menu {
-
+    max-width: 1200px;
+    border: 1px solid white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     position: relative;
-    display: none;
+}
+
+
+.menu {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+
+    margin-left: 10px;
+}
+
+a > li {
+
+    color: gray;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
     
 }
+
+ li:hover {
+
+    color: white;
+    transition: 0.5s ease;
+}
+
 
 .hamburguer {
 
+    display: block;
     width: 1px;
     height: 1px;
     left: 0px ;
@@ -115,6 +84,8 @@ menu {
     background-color: rgba(51, 51, 51, 0.436);
     border-radius: 10%;
     position: relative;
+
+    
 
 }
 
@@ -125,11 +96,10 @@ menu {
 
     position: absolute;
     top: -15px;
-    right: -1460px;
     width: 25px; 
     height: 2px;
-
-    background-color:var(--cor1);
+    
+    background-color: white;
 
     border-radius: 20px;
 
@@ -142,11 +112,10 @@ menu {
 
     position: absolute;
     top: -7px;
-    right: -1460px;
     width: 20px;
     height: 2px;
-
-    background-color:var(--cor1);
+   
+    background-color: white;
 
     border-radius: 20px;
 
@@ -163,6 +132,8 @@ width: 20px;
 height: 2px;
 
 }
+
+
 
 #hamburguer:checked ~ label .hamburguer:before {
 
@@ -186,3 +157,26 @@ height: 2px;
     }
 
 
+@media screen and (max-width: 980px) 
+
+{
+
+    .hamburguer {
+
+        display: block;
+        z-index: 999;
+    }
+
+    .menu {
+
+        height: 100%;
+        max-width: 200px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        padding: 100px 20px;
+        background-color: rgb(157, 153, 153);
+    }
+    
+}

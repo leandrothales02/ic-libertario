@@ -7,6 +7,8 @@
     <title>Livros Libertários</title>
     <link rel="stylesheet" href="paglivros/estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -14,20 +16,19 @@
 
         <h1>Livros disponíveis para download</h1>
 
-        <input onclick="clickUl()" id="hamburguer" type="checkbox"  >
-
+    
         
+                <div class="navbar">
 
-        <label for="hamburguer"> 
+                    <input id="hamburguer" type="checkbox"  >
 
-            <div class="hamburguer"></div>
-            
-                </label>
+                    <label for="hamburguer"> 
 
+                        <div class="hamburguer active"></div>
+                        
+                            </label>
 
-        
-            <menu id="itens">
-                <ul id="ul">
+                <ul id="ul" class="menu">
                     <a href="#">
                         <li><i id= "home" class="material-icons" >home</i></li>
                   </a> <br>
@@ -44,10 +45,11 @@
                         <li><i id= "send" class="material-icons" >send</i></li>
                     </a>
                 </ul>
-       
+            </div>
+            </header>
 
 
-    </header>
+    
 
 
 
@@ -59,18 +61,18 @@
 
 <script>
 
- 
 
-    function clickUl() {
+$(document).ready(function () {
 
-if(itens.style.display == 'block') {
+    $(".hamburguer").click(function () {
 
-    itens.style.display = 'none'; 
-    
-}
+        $(this).toggleClass("active");
+        $(".menu").toggleClass("active");
 
-else {itens.style.display = 'block'; }
-}
+        });
+
+    });
+
 
 </script>
 
