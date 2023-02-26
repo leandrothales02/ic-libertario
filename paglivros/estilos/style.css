@@ -5,7 +5,7 @@
     --fonte1: arial, verdana,helvetica, sans-serif;  
     --fonte-destaque: 'bebas Neue', cursive; 
 
-    --cor1:  #fad02c;
+    --cor1:  #f6c70c;
     --cor2: #d9ba3e85;
 }
 
@@ -45,7 +45,7 @@ div.logo {
     position: absolute;
     margin-right: 10px;
     right:0;
-    transform: translateY(10px);
+    transform: translateY(18px);
     
    
     
@@ -184,6 +184,10 @@ height: 2px;
 
 {
 
+    div.logo {
+
+        display: none;  }
+        
     .hamburguer {
 
         display: block;
