@@ -4,73 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ic libertário</title>
+    <title>Livros Libertários</title>
+    <link rel="stylesheet" href="paglivros/estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="pagprincipal/estilos/style.css">
-    <link rel="stylesheet" href="pagprincipal/estilos/media-queries.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="paglivros/estilos/imagens/favicon.ico" type="image/x-icon">
+    
 </head>
+<body>
 
-<body onresize="mudouTamanho()">
+    <header>
 
-<header>
 
-    <h1>Ic Libertário</h1>
 
-    <i id= "burguer" class="material-icons" onclick="clickMenu()">menu</i>
+                <div class="navbar">
 
-    <menu id="itens" onclick="clickUl()">
+                    <input id="hamburguer" type="checkbox"  >
 
-       
+                    <label for="hamburguer"> 
 
-        <ul>
-            <a href="#">
-                <li>Home <br>
-                    <i id= "home"  class="material-icons">home</i>
-                </li>
-          </a>
+                        <div class="hamburguer active"></div>
+                        
+                            </label>
 
-            <a href="#">
-                <li>Livros <br>
-                    <a href="livros.html" target="_self"><i id="books" class="material-icons">books</i></a>
-                </li>
-               
+                <div class="logo"> <img id="img" src="paglivros/estilos/imagens/logo ic libertario (1)(1).png" alt="logo"></div>            
 
-            </a>
+                <ul id="ul" class="menu active">
+                    <a href="#">
+                        <a href="">
+                            <li><abbr title="Home"><i id= "home" class="material-icons" >home</i></abbr></li>
+                        </a>
+                  </a> <br>
+                    <a href="#">
+                        <li><abbr title="Livros"><i id= "book" class="material-icons" >book</i></abbr></li>
+                    </a>
+                    <br>
+                    <a href="#">
+                        <li><abbr title="Artigos"><i id= "article"  class="material-icons" >article</i></abbr></li>
+                    </a>
+            
+                    <br>
+                    <a href="#">
+                        <li><abbr title="Enviar artigo"><i id= "send" class="material-icons" >send</i></abbr></li>
+                    </a>
 
-            <a id="article" href="#">
-                <li>Artigos <br>
-                    <i id="article"  class="material-icons">article</i>
-                </li>
                 
+                </ul>
+            </div>
+            </header>
 
-            </a>
 
-            <a id="send" href="#">
+    
 
-                <li>Envie seu artigo <br>
-                    <i id="send"  class="material-icons">send</i>
-                </li>
-               
 
-            </a>
-        </ul>
 
-    </menu>
 
-</header>
-
-<main>
-
-    <article id="nos" class="art"></article>
-
-    <article id="ult" class="art"></article>
-
-</main>
-
-<footer>
-    <p></p>
-</footer>
 
 
     
@@ -78,43 +66,19 @@
 
 <script>
 
-    function mudouTamanho() {
 
-    if(window.innerWidth >= 768) {
+$(document).ready(function () {
 
-        itens.style.display = 'block';
-    }
+    $(".hamburguer").click(function () {
 
+        $(this).toggleClass("active");
+        $(".menu").toggleClass("active");
 
+        });
 
-else {itens.style.display = 'none'}
+    });
 
-    }
-
-    function clickMenu() {
-
-        if(itens.style.display == 'none') {
-
-            itens.style.display = 'block'; 
-        }
-
-        else {itens.style.display = 'none'}
-    }
-
-    function clickUl() {
-
-if(itens.style.display == 'none') {
-
-    itens.style.display = 'block'; burguer.style.display = 'none';
-}
-
-else {itens.style.display = 'none'; burguer.style.display = 'block';}
-}
-
-    
-
-  
-    
 
 </script>
+
 </html>
