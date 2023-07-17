@@ -5,7 +5,7 @@
     --fonte1: arial, verdana,helvetica, sans-serif;  
     --fonte-destaque: 'bebas Neue', cursive; 
 
-    --cor1:  #f6c70c;
+    --cor1:  #d9ae03;
     --cor2: #d9ba3e85;
 }
 
@@ -159,13 +159,13 @@ border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 min-width: 300px;
 max-width: 1000px;
-po
+
 }
 
 main > article > h1 {
 
     text-indent: 0px;
-
+    text-align: center;
 
 }
 
@@ -195,6 +195,7 @@ main img {
 
     background-image: linear-gradient(to right, var(--cor1), transparent);
     width: 250px;
+    margin-top: 40px;
 
 }
 
