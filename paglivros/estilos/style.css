@@ -5,7 +5,7 @@
     --fonte1: arial, verdana,helvetica, sans-serif;  
     --fonte-destaque: 'bebas Neue', cursive; 
 
-    --cor1:  #f6c70c;
+    --cor1:  #d9ae03;
     --cor2: #d9ba3e85;
 }
 
@@ -15,7 +15,7 @@
     padding: 0px;
 }
 
-#book {
+#home{
 
     color: white; 
 }
@@ -81,7 +81,7 @@ a {
 
 a > li {
 
-    color: gray;
+    color: black;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -93,6 +93,12 @@ a > li {
 
     color: white;
     transition: 0.5s ease;
+}
+
+ul > li > a {
+
+    text-decoration: none;
+
 }
 
 
@@ -147,6 +153,58 @@ a > li {
     transition: 1s ease;
 }
 
+main {
+
+margin-top:100px ;
+padding: 100px;
+font-family: var(--fonte-destaque)  ;
+color: white;
+background-color: rgba(49, 41, 41, 0.252);
+margin: auto;
+border-bottom-left-radius: 10px; 
+border-bottom-right-radius: 10px;
+min-width: 300px;
+max-width: 1000px;
+
+}
+
+main > article > h1 {
+
+    text-indent: 0px;
+    text-align: center;
+
+}
+
+main p {
+
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+ #cabeçalho img {
+
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
+    box-sizing: border-box;
+    transform: translateY(4px);
+
+
+}
+
+#cabeçalho {
+
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    width: 250px;
+    margin-top: 40px;
+
+}
+
 #hamburguer:checked ~ label .hamburguer:after {
 
 transform: rotate(225deg);
@@ -179,10 +237,94 @@ height: 2px;
         
     }
 
+    #social {
+
+        margin: auto;
+        margin-top: 30px;
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 10px;
+    }
+
+    #redes {
+        margin: auto;
+        min-width: 300px;
+        max-width: 1200px;
+        display:flex;
+        margin-top: 30px;
+        background-color: rgba(49, 41, 41, 0.252);
+    }
+
+    ::-webkit-scrollbar {
+
+        width: 0px;
+        height: 0px;
+    }
+
+    #pix {
+
+        
+        margin: auto;
+        margin-top: 60px;
+    
+    }
+
+    #pix img {
+
+       height: 100px;
+       width: 100px; 
+       
+
+    }
+
+
+
+    #social h1 {
+
+        font-family:var(--fonte-destaque);
+        font-size: 1em;
+        color: white;
+        margin: 20px;
+        transform: translateX(-15px);
+        
+        
+    }
+
+    #social img {
+        
+        
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        margin: 5px;
+        transition:ease-in-out;
+        transition-duration: 0.5s;
+        
+
+
+    }
+
+    #social img:hover {
+
+        border-radius: 50%;
+        transition:ease-in-out;
+        transition-duration: 0.5s;
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+        
+        
+        
+
+    }
+
 
 @media screen and (max-width: 980px) 
 
 {
+
+    #redes {
+
+        flex-direction: column;
+    }
 
     div.logo {
 
