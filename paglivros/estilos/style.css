@@ -61,6 +61,7 @@ div.logo {
     display: flex;
     align-items: center;
     position: relative;
+    
 }
 
 
@@ -110,15 +111,9 @@ ul > li > a {
     top: 10px;
     margin-right: 20px;
     right: -10px;
-
     background-color: rgba(51, 51, 51, 0);
     border-radius: 10%;
     position: absolute;
-
-
-
-    
-
 }
 
 
@@ -131,10 +126,7 @@ ul > li > a {
     width: 25px; 
     height: 2px;
     background-color: white;
-    
-   
     border-radius: 20px;
-
     transition: 1s ease;
 }
 
@@ -163,17 +155,11 @@ background-color: rgba(49, 41, 41, 0.252);
 margin: auto;
 border-bottom-left-radius: 10px; 
 border-bottom-right-radius: 10px;
-min-width: 300px;
+max-width: 300px;
 max-width: 1000px;
 
 }
 
-main > article > h1 {
-
-    text-indent: 0px;
-    text-align: center;
-
-}
 
 main p {
 
@@ -237,83 +223,161 @@ height: 2px;
         
     }
 
-    #social {
+    ul {
 
-        margin: auto;
-        margin-top: 30px;
-        border-bottom-left-radius: 10px; 
-        border-bottom-right-radius: 10px;
-    }
-
-    #redes {
-        margin: auto;
-        min-width: 300px;
-        max-width: 1200px;
-        display:flex;
-        margin-top: 30px;
-        background-color: rgba(49, 41, 41, 0.252);
-    }
-
-    ::-webkit-scrollbar {
-
-        width: 0px;
-        height: 0px;
-    }
-
-    #pix {
-
+        list-style-type: none;
+        list-style-position: inside;
+        columns: 3;
+        margin-top: 20px;
         
-        margin: auto;
-        margin-top: 60px;
+    }
+
+    li {
+
+        margin-bottom: 20px;
+    }
+
+
+    #l1 {
+
+        background: url(imagens/R.jfif);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    #l2 {
+
+        background: url(imagens/acaohumana.jpg);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+    
+
+    }
+
+    #l2 {
+
+        background: url(imagens/umateoriadosocialismo.jpg);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    #l3 {
+
+        background: url(imagens/manifestolib.jpg);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    #l4 {
+
+        background: url(imagens/oqueogovfaz.jfif);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    #l5 {
+
+        background: url(imagens/bastiat.jfif);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    #l6 {
+
+        background: url(imagens/acaohumana.jpg);
+        height: 250px;
+        width: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left bottom;
+        border-radius: 5px;
+        
+
+    }
+
+    .book {
+
+        border: white solid 1px;
+    }
+
+    .book:hover {
+
+        border: var(--cor1) solid 1px;
+    }
+
+
+    .book p {
+
+        display: none;
+        
     
     }
 
-    #pix img {
+    .book:hover > .p1 {
 
-       height: 100px;
-       width: 100px; 
-       
-
-    }
-
-
-
-    #social h1 {
-
-        font-family:var(--fonte-destaque);
-        font-size: 1em;
-        color: white;
-        margin: 20px;
-        transform: translateX(-15px);
-        
+        text-align: justify;
+        text-indent: 45px;
         
     }
 
-    #social img {
-        
-        
-        width: 50px;
-        height: 50px;
-        border-radius: 20%;
+
+    .book:hover > p {
+
+        display: block;
+        background-color: rgba(169, 169, 169, 0.207);
+        border-radius: 5px;
+        max-height: 40px;
+        max-width: 130px;
+        margin: auto;
+        padding: 10px;
         margin: 5px;
-        transition:ease-in-out;
-        transition-duration: 0.5s;
-        
-
-
+        text-align: justify;
+        transform: translateY(90px);
+        font-family: var(--fonte-destaque);
+        font-size: 0.6em;
+        cursor: pointer;
+        font-weight: bold;
+     
     }
 
-    #social img:hover {
+    .book p:hover {
 
-        border-radius: 50%;
-        transition:ease-in-out;
-        transition-duration: 0.5s;
-        transform: translateX(-5px);
-        transform: translateY(-5px);
-        
-        
-        
-
+        background-color: var(--cor2);
+        transition: 0.4s ease;
     }
 
 
@@ -321,10 +385,7 @@ height: 2px;
 
 {
 
-    #redes {
-
-        flex-direction: column;
-    }
+  
 
     div.logo {
 
