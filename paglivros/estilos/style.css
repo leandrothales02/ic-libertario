@@ -151,7 +151,7 @@ margin-top:100px ;
 padding: 100px;
 font-family: var(--fonte-destaque)  ;
 color: white;
-background-color: rgba(49, 41, 41, 0.252);
+background-color: rgba(54, 49, 49, 0.37);
 margin: auto;
 border-bottom-left-radius: 10px; 
 border-bottom-right-radius: 10px;
@@ -160,15 +160,6 @@ max-width: 1000px;
 
 }
 
-
-main p {
-
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 2em;
-    font-size: 1em;
-}
 
  #cabeçalho img {
 
@@ -235,6 +226,15 @@ height: 2px;
     li {
 
         margin-bottom: 20px;
+
+    }
+
+    li p{
+
+        font-size: 0.8em;
+        margin-top: 10px;
+        font-family: var(--fonte1);
+
     }
 
 
@@ -251,18 +251,7 @@ height: 2px;
 
     }
 
-    #l2 {
-
-        background: url(imagens/acaohumana.jpg);
-        height: 250px;
-        width: 150px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left bottom;
-        border-radius: 5px;
     
-
-    }
 
     #l2 {
 
@@ -347,13 +336,7 @@ height: 2px;
     
     }
 
-    .book:hover > .p1 {
-
-        text-align: justify;
-        text-indent: 45px;
-        
-    }
-
+   
 
     .book:hover > p {
 
@@ -362,10 +345,10 @@ height: 2px;
         border-radius: 5px;
         max-height: 40px;
         max-width: 130px;
-        margin: auto;
         padding: 10px;
+        margin: auto;
         margin: 5px;
-        text-align: justify;
+        text-align: center;
         transform: translateY(90px);
         font-family: var(--fonte-destaque);
         font-size: 0.6em;
@@ -376,9 +359,83 @@ height: 2px;
 
     .book p:hover {
 
-        background-color: var(--cor2);
+        background-color: var(--cor1);
         transition: 0.4s ease;
     }
+
+
+@media screen and (max-width: 768px) {
+
+
+    #l1 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    #l2 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    #l3 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    #l4 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    #l5 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    #l6 {
+
+        height: 180px;
+        width: 120px;
+    }
+
+    .book:hover > p {
+
+        display: block;
+        background-color: rgba(169, 169, 169, 0.207);
+        border-radius: 5px;
+        max-height: 10px;
+        max-width: 100px;
+        margin: auto;
+        margin: 5px;
+        text-align: center;
+        transform: translateY(60px);
+        font-family: var(--fonte-destaque);
+        font-size: 0.4em;
+        cursor: pointer;
+        font-weight: bold;
+     
+    }
+
+    .book p:hover {
+
+        background-color: var(--cor1);
+        transition: 0.4s ease;
+    }
+
+    ul {
+
+        columns: 2;
+        
+        
+    }
+
+
+}
 
 
 @media screen and (max-width: 980px) 
