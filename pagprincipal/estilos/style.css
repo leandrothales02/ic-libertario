@@ -91,7 +91,7 @@ a > li {
 
  li:hover {
 
-    color: black;
+    color: var(--cor1);
     transition: 0.5s ease;
 }
 
@@ -177,6 +177,7 @@ div.article:hover {
 
     opacity: 70%;
     transition: ease 0.4s;
+    cursor: pointer;
 }
 
 div.article p {
@@ -195,13 +196,13 @@ div.article:hover p {
 section.img {
 
 position: relative;
-background: url(../imagens/gettyimages-168247633-612x612.jpg);
+background: url(../imagens/revolucao.jfif);
 background-size: cover;
-background-position: left bottom;
+background-position: top center;
 min-width: 100px;
-max-width: 600px;
+max-width: 500px;
 min-height: 200px;
-max-height:  400px;
+max-height:  300px;
 margin: auto;
 border-bottom-left-radius: 10px; 
 border-bottom-right-radius: 10px;
@@ -210,6 +211,13 @@ margin-top:100px ;
 padding: 100px;
 
 }
+
+section.img:hover {
+
+    background-size: 120%;
+    
+     }
+
 
 main > article > h1 {
 
