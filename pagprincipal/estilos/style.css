@@ -203,6 +203,7 @@ section.img {
 position: relative;
 background: url(../imagens/revolucao.jfif);
 background-size: cover;
+background-repeat: no-repeat;
 background-position: top center;
 min-width: 100px;
 max-width: 500px;
